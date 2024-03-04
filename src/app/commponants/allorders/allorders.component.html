@@ -1,0 +1,16 @@
+<section class="text-center text-capitalize">
+    <div class="w-50 m-auto">
+        <img src="./assets/1600w-l5R96oHsDo8.webp" alt="" class="w-100">
+    </div>
+    <div class="">
+    </div>
+    <h1>your last orders:</h1>
+    <div class="row p-3 border-bottom" *ngFor="let item of allOrders  ">
+      <div class="col-md-3" *ngFor="let prod of item.cartItems">
+        <img [src]="prod.product.imageCover" alt="" class="w-100">
+        <p>{{prod.product.title}}</p>
+      </div>
+      <p class="text-center text-main">{{item .totalOrderPrice|currency:'l.e'}}</p>
+    </div>
+    <button class="btn-main " routerLink="/home">GoBackToHome</button>
+  </section>

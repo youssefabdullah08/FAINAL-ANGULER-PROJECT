@@ -1,0 +1,18 @@
+<section class="w-75 text-capitalize mx-auto bg-main-light shadow">
+    <h1>shipping details</h1>
+    <form [formGroup]="detailsShipping" (ngSubmit)="handejForm()" >
+    <div class="py-2">
+        <label for="">details</label>
+        <input type="text" class="form-control" formControlName="details">
+    </div>
+    <div class="py-2">
+        <label for="">phone</label>
+        <input type="tel" class="form-control" formControlName="phone">
+    </div>
+    <div class="py-2">
+        <label for="">city</label>
+        <input type="text" class="form-control" formControlName="city">
+    </div>
+    <button class="btn-main" type="submit">send</button>
+    </form>
+</section>

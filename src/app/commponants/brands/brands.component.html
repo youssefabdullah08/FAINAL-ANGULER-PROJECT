@@ -1,0 +1,7 @@
+<div class="row g-3">
+    <div class="col-md-4  rounded-3" *ngFor="let item of allBrands">
+        <div class="product" [routerLink]="['/brandinfo',item._id]">
+            <img [src]="item.image" alt="" class="w-100">
+        </div>
+    </div>
+</div>
